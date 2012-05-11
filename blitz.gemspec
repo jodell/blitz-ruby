@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["pcapr"]
-  s.date = %q{2012-03-08}
+  s.date = %q{2012-05-11}
   s.default_executable = %q{blitz}
   s.description = %q{Make load and performance testing a fun sport}
   s.email = %q{support@blitz.io}
@@ -58,19 +58,8 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://blitz.io}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
+  s.rubygems_version = %q{1.6.1}
   s.summary = %q{Make load and performance testing a fun sport}
-  s.test_files = [
-    "spec/blitz/client_spec.rb",
-    "spec/blitz/command/api_spec.rb",
-    "spec/blitz/command/curl_spec.rb",
-    "spec/blitz/curl/rush_spec.rb",
-    "spec/blitz/curl/sprint_spec.rb",
-    "spec/blitz/curl_spec.rb",
-    "spec/spec_helper.rb",
-    "test/helper.rb",
-    "test/test_blitz.rb"
-  ]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -78,34 +67,34 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<couchrest>, ["~> 1.0.1"])
       s.add_runtime_dependency(%q<rest-client>, ["~> 1.6.1"])
-      s.add_runtime_dependency(%q<json>, ["~> 1.5.1"])
-      s.add_runtime_dependency(%q<json_pure>, ["~> 1.5.1"])
+      s.add_runtime_dependency(%q<json>, [">= 1.4"])
+      s.add_runtime_dependency(%q<json_pure>, ["~> 1.4"])
       s.add_runtime_dependency(%q<hexy>, ["~> 0.1.1"])
-      s.add_runtime_dependency(%q<term-ansicolor>, ["= 1.0.5"])
-      s.add_runtime_dependency(%q<rake>, ["= 0.9.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.1"])
+      s.add_runtime_dependency(%q<term-ansicolor>, [">= 1.0.5"])
+      s.add_runtime_dependency(%q<rake>, [">= 0.9.0"])
+      s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.8"])
     else
       s.add_dependency(%q<couchrest>, ["~> 1.0.1"])
       s.add_dependency(%q<rest-client>, ["~> 1.6.1"])
-      s.add_dependency(%q<json>, ["~> 1.5.1"])
-      s.add_dependency(%q<json_pure>, ["~> 1.5.1"])
+      s.add_dependency(%q<json>, [">= 1.4"])
+      s.add_dependency(%q<json_pure>, ["~> 1.4"])
       s.add_dependency(%q<hexy>, ["~> 0.1.1"])
-      s.add_dependency(%q<term-ansicolor>, ["= 1.0.5"])
-      s.add_dependency(%q<rake>, ["= 0.9.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
+      s.add_dependency(%q<term-ansicolor>, [">= 1.0.5"])
+      s.add_dependency(%q<rake>, [">= 0.9.0"])
+      s.add_dependency(%q<bundler>, [">= 1.0.0"])
+      s.add_dependency(%q<jeweler>, ["~> 1.8"])
     end
   else
     s.add_dependency(%q<couchrest>, ["~> 1.0.1"])
     s.add_dependency(%q<rest-client>, ["~> 1.6.1"])
-    s.add_dependency(%q<json>, ["~> 1.5.1"])
-    s.add_dependency(%q<json_pure>, ["~> 1.5.1"])
+    s.add_dependency(%q<json>, [">= 1.4"])
+    s.add_dependency(%q<json_pure>, ["~> 1.4"])
     s.add_dependency(%q<hexy>, ["~> 0.1.1"])
-    s.add_dependency(%q<term-ansicolor>, ["= 1.0.5"])
-    s.add_dependency(%q<rake>, ["= 0.9.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
+    s.add_dependency(%q<term-ansicolor>, [">= 1.0.5"])
+    s.add_dependency(%q<rake>, [">= 0.9.0"])
+    s.add_dependency(%q<bundler>, [">= 1.0.0"])
+    s.add_dependency(%q<jeweler>, ["~> 1.8"])
   end
 end
 

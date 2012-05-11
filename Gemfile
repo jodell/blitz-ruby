@@ -5,17 +5,17 @@ source "http://rubygems.org"
 
 gem "couchrest", "~> 1.0.1"
 gem "rest-client", "~> 1.6.1"
-gem "json", "~> 1.5.1"
-gem "json_pure", "~> 1.5.1"
+gem "json", ">= 1.4"
+gem "json_pure", "~> 1.4"
 gem "hexy", "~> 0.1.1"
-gem 'term-ansicolor', '1.0.5'
-gem 'rake', '0.9.0'
+gem 'term-ansicolor', '>= 1.0.5'
+gem 'rake', '>= 0.9.0'
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
-  gem "bundler", "~> 1.0.0"
-  gem "jeweler", "~> 1.5.1"
+  gem "bundler", ">= 1.0.0"
+  gem "jeweler", "~> 1.8"
 end
 
 group :test do
